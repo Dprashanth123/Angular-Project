@@ -1,0 +1,1889 @@
+<div class="form container" style="width:100%;font-family:Arial, Helvetica, sans-serif">
+    <div  style="margin-top: 4em;border-bottom: 5px solid black;">
+	<div class="section-header row " >
+      
+        <div class="col-sm-2" >
+            <p>Form<strong style="font-size: 4em;">W4</strong></p>
+           <div >Department of the Treasury Internal Revenue Service</div>
+           </div>
+             
+           <div class="col-sm-8" style="text-align: center;border-left: 2px solid black;border-right: 2px solid black;padding-bottom: 1em;">
+            <h3><strong>Employee’s Withholding Certificate</strong> </h3>
+          
+           <strong style="text-align: center;">  ▶ Complete Form W-4 so that your employer can withhold the correct federal income tax from your pay.</strong>
+           <div><strong style="text-align: center;">▶ Give Form W-4 to your employer.</strong></div> 
+           <div><strong style="text-align: center;">▶ Your withholding is subject to review by the IRS.</strong></div> 
+          </div>
+
+     
+           <div class="col-sm-2 justify-content align-self"   >
+           <div > 
+             <div style="border-bottom: 1px solid black;">OMB No. 1545-0074</div>
+              
+               <div style="text-align: center;padding-top:1em"><h1><strong>2021</strong></h1></div>
+             </div>
+             </div>
+        
+    </div>
+    </div>
+
+    <form method="post" class="w4form" (ngSubmit)="onSubmit(f)" #f="ngForm" action="#" style="font-family:Arial, Helvetica, sans-serif; font-size: 15px;">
+
+    <div class="form-box container" style="border-bottom: 2px solid black;margin-bottom: 1ex;">
+    
+    <div class="col-sm-2" style="border-right: 1px solid black;display:flex;padding-bottom: 18em;"><strong>Step 1:
+        Enter Personal Information</strong></div>
+    
+    <div class="col-sm-10"  >
+
+    <div class="row" style="border-bottom: 1px solid black;">
+        <div class="col-sm-4" style="border-right: 1px solid black">
+           <div> <label>(a) First name and middle initial</label></div>
+            <input type="text" name="first_Name" ngModel>
+        </div>
+        <div class="col-sm-4" style="border-right: 1px solid black">
+        <div> <label>Last name</label></div>
+            <input type="text" name="lastName" ngModel>
+        </div>
+        <div class="col-sm-3">
+        <div> <label>(b) Social security number</label></div>
+            <input type="text" name="securityNumber" ngModel>
+        </div>
+    </div>
+
+   
+    <div class="row" style="border-bottom: 1px solid black;">
+        <div class="col-sm-8">
+    <div class="row" style="border-bottom: 1px solid black;border-right: 1px solid black;">
+        <div class="col-sm-8" >
+            <div><label>Adress</label> </div>
+            <input type="text" name="address" ngModel>
+        </div>
+    </div>
+    <div class="row" style="border-right: 1px solid black;padding-bottom: 1em;">
+        <div class="col-sm-8">
+           <div><label>City or town, state, and ZIP code</label></div> 
+            <input type="text" name="city" ngModel>
+        </div>    
+    </div>
+    </div>
+    <div class="col-sm-3">
+        <p style="display: flex;"><small>▶ Does your name match the name on your social security card? If not, to ensure you get credit for your earnings, contact SSA at 800-772-1213 or go to www.ssa.gov.</small></p>
+    </div>
+   </div>
+
+
+    <div class="row" >
+        <div class="col-sm-11" style="display: flex;"><div style="padding-right: 1em;"><label>(c)</label></div>
+
+            <div>
+         <div><input type="checkbox" ngModel name="meterialStatus" id="permanent-resident" style="display: inline; width: 1em; height: 1em;margin-right: 10px;"/>
+            <label>Single or Married filing separately</label></div>   
+
+           <div> <input type="checkbox" ngModel name="meterialStatus" id="permanent-resident" style="display: inline; width: 1em; height: 1em;margin-right: 10px;"/>
+            <label>Married filing jointly (or Qualifying widow(er))</label></div>
+
+            <div style="display: flex;"><div><input type="checkbox" ngModel name="meterialStatus" id="permanent-resident" style="display: inline; width: 1em; height: 1em;margin-right: 10px;"/></div>
+            <div><label>Head of household (Check only if you’re unmarried and pay more than half the costs of keeping up a home for yourself and a qualifying individual.)</label></div></div>
+           </div>
+
+        </div>
+    </div>
+    
+    </div>
+    </div>
+<div class="form-box container">
+    <div style="border-bottom: 2px solid black;padding-bottom:1em ;"><strong>Complete Steps 2–4 ONLY if they apply to you; otherwise, skip to Step 5.</strong> See page 2 for more information on each step, who can claim exemption from withholding, when to use the online estimator, and privacy.</div>
+</div>
+
+<!--step-2-->
+<div class="form-box container" >
+<div class="row">
+    <div class="col-sm-2">
+    <p><strong>Step 2:Multiple Jobs or Spouse Works</strong></p>
+    </div>
+
+    <div class="col-sm-10">
+        <div class="row">
+        Complete this step if you (1) hold more than one job at a time, or (2) are married filing jointly and your spousealso works. The correct amount of withholding depends on income earned from all of these jobs.</div>
+        <div class="row">Do only one of the following.</div>
+        <div class="row">(a)
+Use the estimator at www.irs.gov/W4App for most accurate withholding for this step (and Steps 3–4); or</div>
+<div class="row">
+(b)
+Use the Multiple Jobs Worksheet on page 3 and enter the result in Step 4(c) below for roughly accurate withholding; or</div>
+<div class="row">
+(c)
+If there are only two jobs total, you may check this box. Do the same on Form W-4 for the other job. 
+This option is accurate for jobs with similar pay; otherwise, more tax than necessary may be withheld ..... ▶
+<input type="checkbox" style="display: inline; width: 1em; height: 1em;">
+</div>
+<div class="row">
+TIP: To be accurate, submit a 2020 Form W-4 for all other jobs. If you (or your spouse) have self-employment income, including as an independent contractor, use the estimator.</div>
+    </div>
+</div>
+</div>
+
+<div class="container" style="border-bottom: 2px solid black;">
+    Complete Steps 3–4(b) on Form W-4 for only ONE of these jobs. Leave those steps blank for the other jobs. 
+    (Your withholding will be most accurate if you complete Steps 3–4(b) on the Form W-4 for the highest paying job.)
+
+</div>
+<!--step3-->
+<div class="form-box container" style="border-bottom: 2px solid black;">
+    <div class="row">
+
+        <div class="col-sm-2">
+        <p><strong>Step 3:
+            Claim Dependents</strong></p>
+        </div>
+    
+        <div class="col-sm-7" style="border-right: 1px solid black;">
+            <div class="row">
+                If your income will be $200,000 or less ($400,000 or less if married filing jointly):</div>
+            <div class="row">Multiply the number of qualifying children under age 17 by $2,000 ▶
+                $
+            <input type="text" style="border-bottom: 2px solid black;">
+            </div>
+            <div class="row">Multiply the number of other dependents by $500 .... ▶
+                $
+                <input type="text" style="border-bottom: 2px solid black;">
+            </div>
+            <div class="row">
+             Add the amounts above and enter the total here .............
+            </div>
+        </div>
+
+        <div class="col-sm-3" >
+            <div class="row">
+
+                <div style="display: flex;margin-top: 4em;padding-left: 1em;" >
+                    <div><strong>3 $</strong></div>
+                    <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+               </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!--step-4-->
+    <div class="form-box container" style="border-bottom: 2px solid black;">
+        <div class="row">
+    
+            <div class="col-sm-2">
+            <p><strong>Step 4 (optional):
+                Other Adjustments</strong></p>
+            </div>
+        
+            <div class="col-sm-7" style="border-right: 1px solid black;">
+                <div class="row">
+                    <strong>(a)
+Other income (not from jobs). </strong>If you want tax withheld for other income you expect this year that won’t have withholding, enter the amount of other income here.
+ This may include interest, dividends, and retirement income ............</div>
+                <div class="row"><strong>(b)
+                    Deductions.</strong> If you expect to claim deductions other than the standard deductionand want to reduce your withholding,
+                     use the Deductions Worksheet on page 3 and enter the result here .....................</div>
+                <div class="row"><strong>(c)
+                    Extra withholding.</strong> Enter any additional tax you want withheld each pay period .</div>
+                <div class="row">
+                 Add the amounts above and enter the total here .............
+                </div>   
+            </div>
+
+           <div class="col-sm-3" style="border-bottom: 1px solid black;padding-bottom: 0.5em;">
+
+               <div style="display: flex;margin-top: 2em;" >
+                <div><strong>4a  $</strong></div>
+                <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+               </div>
+               <div style="display: flex;margin-top: 3em;">
+                <div><strong>4b  $</strong></div>
+                <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+               </div>
+               <div style="display: flex;margin-top: 1em;">
+                <div><strong>4c  $</strong></div>
+                <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+               </div>
+
+           </div>
+
+        </div>
+        <br>
+        </div>
+
+        <!--step-5-->
+
+        <div class="form-box container" style="border-bottom: 2px solid black;">
+            <div class="row">
+    <div class="col-sm-1" style="border-right: 1px solid black;">
+    <strong>Step 5:Sign Here</strong>
+    </div>
+<div class="col-sm-11">
+    <div class="row">
+    Under penalties of perjury, I declare that this certificate, to the best of my knowledge and belief, 
+    is true, correct, and complete.</div>
+    <div class="row" >
+    ▶Employee’s signature (This form is not valid unless you sign it.)
+    ▶Date
+    </div>
+</div>
+    </div>
+</div>
+
+<!--Employers Only-->
+
+<div class="form-box container" style="border-bottom: 2px solid black;">
+    <div class="row">
+        <div class="col-sm-1" style="border-right: 1px solid black;padding-bottom: 3.5em;">
+            <strong>Employers Only</strong>
+        </div>
+        <div class="col-sm-6" style="border-right: 1px solid black;padding-bottom: 3.1em;">
+        <div><label>Employe's Name and Address</label></div>
+        <input type="text" style="width:30em;">
+        </div>
+        <div class="col-sm-2" style="border-right: 1px solid black;padding-bottom: 1.6em;;">
+        <div><label>First date of
+            employment</label></div>
+            <input type="text" style="width:10em;">
+        </div>
+        <div class="col-sm-3" >
+        <div><label>Employer identification
+            number (EIN)</label></div>
+            <input type="text" style="width:20em;">
+        </div>
+    </div>
+
+</div>
+
+<div class="form-box container">
+<strong>For Privacy Act and Paperwork Reduction Act Notice, see page 3.</strong>
+<span style="margin-left: 10em;">Cat. No. 10220Q </span><span style="margin-left: 19em;">Form W-4 (2020)</span>
+</div>
+
+<!-------------------------------------------------------Page-2------------------------------------------------->
+<hr>
+<hr class="heavy" style="border-bottom: 5px solid black;"/>
+<div class="form-box container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div><h3> <strong>General Instructions</strong></h3></div>
+            <div><h4> <strong>Future Developments</strong></h4></div>
+            <div>For the latest information about developments related to Form W-4, such as legislation enacted after it was published, go to<em> www.irs.gov/FormW4.</em></div>
+            
+            
+            <div><h3><strong>Purpose of Form</strong></h3></div>
+            <p>Complete Form W-4 so that your employer can withhold the correct federal income tax from your pay. If too little is withheld, you will generally owe tax when you file your tax return and may owe a penalty. If too much is withheld, you will generally be due a refund. Complete a new Form W-4 when changes to your personal or financial situation would change the entries on the form. For more information on withholding and when you must furnish a new Form W-4, see Pub. 505.</p>
+            <strong>Exemption from withholding.</strong> You may claim exemption from withholding for 2020 if you meet both of the following conditions: you had no federal income tax liability in 2019 and you expect to have no federal income tax liability in 2020. You had no federal income tax liability in 2019 if (1) your total tax on line 16 on your 2019 Form 1040 or 1040-SR is zero (or less than the sum of lines 18a, 18b, and 18c), or (2) you were not required to file a return because your income was below the filing threshold for your correct filing status. If you claim exemption, you will have no income tax withheld from your paycheck and may owe taxes and penalties when you file your 2020 tax return. To claim exemption from withholding, certify that you meet both of the conditions above by writing “Exempt” on Form W-4 in the space below Step 4(c). Then, complete Steps 1(a), 1(b), and 5. Do not complete any other steps. You will need to submit a new Form W-4 by February 16, 2021.
+            <p><strong>Your privacy. </strong>If you prefer to limit information provided in Steps 2 through 4, use the online estimator, which will also increase accuracy.</p>
+            <p>As an alternative to the estimator: if you have concerns with Step 2(c), you may choose Step 2(b); if you have concerns with Step 4(a), you may enter an additional amount you want withheld per pay period in Step 4(c). If this is the only job in your household, you may instead check the box in Step 2(c), which will increase your withholding and significantly reduce your paycheck (often by thousands of dollars over the year).</p>
+            <p><strong>When to use the estimator.</strong> Consider using the estimator at<em> www.irs.gov/W4App </em>if you:</p>
+            <p>1. Expect to work only part of the year;</p>
+            <p>2. Have dividend or capital gain income, or are subject to additional taxes, such as the additional Medicare tax;</p>
+            <p>3. Have self-employment income (see below); or</p>
+            <p>4. Prefer the most accurate withholding for multiple job situations.</p>
+            <p><strong>Self-employment.</strong> Generally, you will owe both income and self-employment taxes on any self-employment income you receive separate from the wages you receive as an employee. If you want to pay these taxes through withholding from your wages, use the estimator at www.irs.gov/W4App to figure the amount to have withheld.</p>
+            <p><strong>Nonresident alien.</strong> If you’re a nonresident alien, see Notice 1392, Supplemental Form W-4 Instructions for Nonresident Aliens, before completing this form.</p>
+
+        </div>
+
+        <div class="col-sm-6">
+
+            <div><h3><strong>Specific Instructions </strong></h3></div>
+            <p><strong>Step 1(c).</strong> Check your anticipated filing status. This will determine the standard deduction and tax rates used to compute your withholding.</p>
+            <p><strong>Step 2.</strong> Use this step if you (1) have more than one job at the same time, or (2) are married filing jointly and you and your spouse both work.</p>
+            <p>Option <strong>(a) </strong>most accurately calculates the additional tax you need to have withheld, while option<strong> (b)</strong> does so with a little less accuracy.</p>
+            <P>If you (and your spouse) have a total of only two jobs, you may instead check the box in option <strong>(c). </strong>The box must also be checked on the Form W-4 for the other job. If the box is checked, the standard deduction and tax brackets will be cut in half for each job to calculate withholding. This option is roughly accurate for jobs with similar pay; otherwise, more tax than necessary may be withheld, and this extra amount will be larger the greater the difference in pay is between the two jobs.</P>
+        
+            <p><strong>Multiple jobs.</strong> Complete Steps 3 through 4(b) on only one Form W-4. Withholding will be most accurate if you do this on the Form W-4 for the highest paying job.</p>
+            <p><strong>Step 3.</strong> Step 3 of Form W-4 provides instructions for determining the amount of the child tax credit and the credit for other dependents that you may be able to claim when you file your tax return. To qualify for the child tax credit, the child must be under age 17 as of December 31, must be your dependent who generally lives with you for more than half the year, and must have the required social security number. You may be able to claim a credit for other dependents for whom a child tax credit can’t be claimed, such as an older child or a qualifying relative. For additional eligibility requirements for these credits, see Pub. 972, Child Tax Credit and Credit for Other Dependents. You can also include <strong>other tax credits </strong>in this step, such as education tax credits and the foreign tax credit. To do so, add an estimate of the amount for the year to your credits for dependents and enter the total amount in Step 3. Including these credits will increase your paycheck and reduce the amount of any refund you may receive when you file your tax return.</p>
+            <p><strong>Step 4 (optional).</strong></p>
+            <p><strong>Step 4(a). </strong>Enter in this step the total of your other estimated income for the year, if any. You shouldn’t include income from any jobs or self-employment. If you complete Step 4(a), you likely won’t have to make estimated tax payments for that income. If you prefer to pay estimated tax rather than having tax on other income withheld from your paycheck, see Form 1040-ES, Estimated Tax for Individuals.</p>
+            <p><strong>Step 4(b). </strong>Enter in this step the amount from the Deductions Worksheet, line 5, if you expect to claim deductions other than the basic standard deduction on your 2020 tax return and want to reduce your withholding to account for these deductions. This includes both itemized deductions and other deductions such as for student loan interest and IRAs.</p>
+            <p><strong>Step 4(c). </strong>Enter in this step any additional tax you want withheld from your pay each pay period, including any amounts from the Multiple Jobs Worksheet, line 4. Entering an amount here will reduce your paycheck and will either increase your refund or reduce any amount of tax that you owe.</p>
+
+        </div>
+    </div>
+</div>
+
+<hr>
+<!----------------------------------------------------PAGE-3------------------------------------------------------->
+<hr class="heavy" style="border-bottom: 5px solid black;"/>
+<div class="form-box container display" style="border-bottom: 2px solid black;">
+
+    <div style="text-align: center;border-bottom: 1px solid black;"> 
+        <strong>Step 2(b)—Multiple Jobs Worksheet </strong>(Keep for your records.)
+     </div>
+     <p>If you choose the option in Step 2(b) on Form W-4, complete this worksheet (which calculates the total extra tax for all jobs) on only ONE Form W-4. Withholding will be most accurate if you complete the worksheet and enter the result on the Form W-4 for the highest paying job.</p>
+     <p><strong>Note: </strong>If more than one job has annual wages of more than $120,000 or there are more than three jobs, see Pub. 505 for additional tables; or, you can use the online withholding estimator at www.irs.gov/W4App.</p>
+<div class="col-sm-12">
+     <diV class="row">
+         <div class="col-sm-1" style="text-align: end;">
+            <strong>1</strong>
+         </div>
+         <div class="col-sm-9">
+           <p> Two jobs. If you have two jobs or you’re married filing jointly and you and your spouse each have onejob, find the amount from the appropriate table on page 4.
+             Using the “Higher Paying Job” row and the“Lower Paying Job” column, find the value at the intersection of the two household salaries and enter that value on line 1. Then, skip to line 3 .....................</p>
+        </div>
+        <div class="col-sm-2 ">
+            <div style="display: flex;">
+                <div><strong>1  $</strong></div>
+                <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+               </div>
+        </div>
+     </diV>
+
+     <diV class="row" >
+        <div class="col-sm-1" style="text-align: end;">
+            <strong>2</strong>
+        </div>
+        <div class="col-sm-9">
+          <p><strong>Tree jobs.</strong> If you and/or your spouse have three jobs at the same time, complete lines 2a, 2b, and 2c below. Otherwise, skip to line 3.</p>
+
+          <div class="row">
+              <div class="col-sm-1" style="text-align: end;">
+                  <strong>a</strong>
+              </div>
+              <div class="col-sm-11">
+                  <p>Find the amount from the appropriate table on page 4 using the annual wages from the highest paying job in the “Higher Paying Job” row and the annual wages for your next highest paying jobin the “Lower Paying Job” column. Find the value at the intersection of the two household salaries and enter that value on line 2a .......................</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-1" style="text-align: end;">
+                <strong>b</strong>
+            </div>
+            <div class="col-sm-11">
+                <p>Add the annual wages of the two highest paying jobs from line 2a together and use the total as the wages in the “Higher Paying Job” row and use the annual wages for your third job in the “Lower Paying Job” column to find the amount from the appropriate table on page 4 and enter this amount on line 2b .............................</p>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1" style="text-align: end;">
+                <strong>c</strong>
+            </div>
+            <div class="col-sm-11">
+                <p>Add the amounts from lines 2a and 2b and enter the result on line 2c .......... </p>
+          </div>
+        </div>
+
+       </div>
+       <div class="col-sm-2" >
+           
+           <div style="display: flex;margin-top: 6em;" >
+            <div><strong>2a  $</strong></div>
+            <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+           </div>
+           <div style="display: flex;margin-top: 3em;">
+            <div><strong>2b  $</strong></div>
+            <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+           </div>
+           <div style="display: flex;margin-top: 1em;">
+            <div><strong>2c  $</strong></div>
+            <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+           </div>
+       </div>
+    </diV>
+
+    <diV class="row" >
+        <div class="col-sm-1" style="text-align: end;">
+            <strong>3</strong>
+        </div>
+        <div class="col-sm-9">
+    <p>Enter the number of pay periods per year for the highest paying job. For example, if that job paysweekly, enter 52; if it pays every other week, enter 26; if it pays monthly, enter 12, etc. .....</p>
+       </div>
+       <div class="col-sm-2">
+        <div style="display: flex;">
+            <div style="margin-right: 1.5em;"><strong>3</strong></div>
+            <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+           </div>
+       </div>
+    </diV>
+
+    <diV class="row" >
+        <div class="col-sm-1" style="text-align: end;">
+            <strong>4</strong>
+        </div>
+        <div class="col-sm-9">
+<p><strong>Divide </strong>the annual amount on line 1 or line 2c by the number of pay periods on line 3. Enter thisamount here and in<strong> Step 4(c) </strong>of Form W-4 for the highest paying job (along with any other additionalamount you want withheld) .........................</p>
+       </div>
+       <div class="col-sm-2">
+
+        <div style="display: flex;">
+            <div><strong>4  $</strong></div>
+            <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+           </div>
+
+       </div>
+    </diV>
+</div>
+</div>
+
+
+
+
+
+
+<div class="form-box container display" style="border-bottom: 3px solid black;">
+
+    <div style="text-align: center;border-bottom: 1px solid black;"> 
+        <strong>Step 4(b)—Deductions Worksheet </strong>(Keep for your records.)
+     </div>
+
+<div class="col-sm-12">
+     <diV class="row">
+         <div class="col-sm-1" style="text-align: end;">
+            <strong>1</strong>
+         </div>
+         <div class="col-sm-9">
+           <p> Enter an estimate of your 2020 itemized deductions (from Schedule A (Form 1040 or 1040-SR)). Such deductions may include qualifying home mortgage interest, charitable contributions, state and local taxes (up to $10,000), and medical expenses in excess of 7.5% of your income .......</p>
+        </div>
+        <div class="col-sm-2 ">
+            <div style="display: flex;">
+            <div><strong>1  $</strong></div>
+            <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+           </div>
+        </div>
+     </diV>
+
+     <diV class="row" >
+        <div class="col-sm-1" style="text-align: end;">
+            <strong>2</strong>
+        </div>
+        <div class="col-sm-9">
+          <p>Enter:
+            
+            • $24,800 if you’re married filing jointly or qualifying widow(er)
+            • $18,650 if you’re head of household
+            • $12,400 if you’re single or married filing separately
+            
+            .
+            .......</p>
+
+       </div>
+       <div class="col-sm-2">
+
+        <div style="display: flex;">
+            <div><strong>2  $</strong></div>
+            <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+           </div>
+
+       </div>
+    </diV>
+
+    <diV class="row" >
+        <div class="col-sm-1" style="text-align: end;">
+            <strong>3</strong>
+        </div>
+        <div class="col-sm-9">
+    <p>If line 1 is greater than line 2, subtract line 2 from line 1. If line 2 is greater than line 1, enter “-0-” ..</p>
+       </div>
+       <div class="col-sm-2">
+
+        <div style="display: flex;">
+            <div><strong>3  $</strong></div>
+            <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+           </div>
+
+       </div>
+    </diV>
+
+    <diV class="row" >
+        <div class="col-sm-1" style="text-align: end;">
+            <strong>4</strong>
+        </div>
+        <div class="col-sm-9">
+<p>Enter an estimate of your student loan interest, deductible IRA contributions, and certain other adjustments (from Part II of Schedule 1 (Form 1040 or 1040-SR)). See Pub. 505 for more information</p>
+       </div>
+       <div class="col-sm-2">
+
+        <div style="display: flex;">
+            <div><strong>4  $</strong></div>
+            <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+           </div>
+
+       </div>
+    </diV>
+
+    <diV class="row" >
+        <div class="col-sm-1" style="text-align: end;">
+            <strong>5</strong>
+        </div>
+        <div class="col-sm-9">
+    <p><strong>Add</strong> lines 3 and 4. Enter the result here and in<strong> Step 4(b) </strong>of Form W-4 ...........</p>
+       </div>
+       <div class="col-sm-2">
+
+        <div style="display: flex;">
+            <div><strong>5  $</strong></div>
+            <div><input type="text" style="border-bottom: 1px solid black;width: 6em;"></div>
+           </div>
+
+       </div>
+    </diV>
+</div>
+</div>
+<br>
+<div class="form-box container" style="font-size: 12px;font-family:inherit">
+    <div class="row">
+        <div class="col-sm-6">
+            <p>
+               <strong>Privacy Act and Paperwork Reduction Act Notice.</strong> We ask for the information on this form to carry out the Internal Revenue laws of the United States.
+                 Internal Revenue Code sections 3402(f)(2) and 6109 and their regulations require you to provide this information; your employer uses it to determine your federal income tax withholding. 
+                Failure to provide a properly completed form will result in your being treated as a single person with no other entries on the form; providing fraudulent information may subject you to penalties.
+                 Routine uses of this information include giving it to the Department of Justice for civil and criminal litigation; to cities, states, the District of Columbia, and U.S. commonwealths and possessions for use in administering their tax laws; 
+                 and to the Department of Health and Human Services for use in the National Directory of New Hires. We may also disclose this information to other countries under a tax treaty, to federal and state agencies to enforce federal nontax criminal laws,
+                  or to federal law enforcement and intelligence agencies to combat terrorism.
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <p>
+                You are not required to provide the information requested on a form that is subject to the Paperwork Reduction Act unless the form displays a valid OMB control number.
+                 Books or records relating to a form or its instructions must be retained as long as their contents may become material in the administration of any Internal Revenue law. Generally, tax returns and return information are confidential, as required by Code section 6103.
+            </p>
+            <p>
+                The average time and expenses required to complete and file this form will vary depending on individual circumstances. For estimated averages, see the instructions for your income tax return.
+            </p>
+            <p>
+                If you have suggestions for making this form simpler, we would be happy to hear from you. See the instructions for your income tax return.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------------PAGE-3------------------------------------------------------>
+<hr class="heavy" style="border-bottom: 5px solid black;"/>
+<div class="container" style="width: 100%;">
+
+    <div class="row">
+        <div class=" col-sm-12 " style="text-align: center;">
+           <strong> Married Filing Jointly or Qualifying Widow(er) </strong>
+        </div>
+    </div>
+
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;border-top:1px solid black">
+         <strong>Higher Paying Job Annual Taxable Wage & Salary</strong>
+        </div>
+
+        <div class="col-sm-10" style="border-top:1px solid black;border-bottom:1px solid black;border-left:1px solid black;text-align: center;">
+            <strong>Lower Paying Job Annual Taxable Wage & Salary</strong>
+        </div>
+
+        <div class="col-sm-10" style="border:1px solid black" style="font-size: 12px;">
+            <div class="row">
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$0 - 9,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$10,000 - 19,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$20,000 - 29,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$30,000 - 39,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$40,000 - 49,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$50,000 - 59,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$60,000 - 69,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$70,000 - 79,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$80,000 - 89,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$90,000 - 99,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$100,000 - 109,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;padding-bottom: 0.7em;">$110,000 - 120,000</div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$0 - 9,999</div>
+            <div>$10,000 - 19,999</div>
+            <div>$20,000 - 29,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>$0</div>
+                <div>220</div>
+                 <div>850</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$220</div>
+                <div>1,220</div>
+                 <div>1,900</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$850</div>
+                <div>1,900</div>
+                 <div>2,730</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$900</div>
+                <div>2,100</div>
+                 <div>2,930</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,020</div>
+                <div>2,220</div>
+                 <div>3,050</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,020</div>
+                <div>2,220</div>
+                 <div>3,050</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,020</div>
+                <div>2,220</div>
+                 <div>3,050</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,020</div>
+                <div>2,220</div>
+                 <div>3,240</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,020</div>
+                <div>2,410</div>
+                 <div>4,240</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,210</div>
+                <div>3,410</div>
+                 <div>5,240</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,870</div>
+                <div>4,070</div>
+                 <div>5,900</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>$1,870</div>
+                <div>4070</div>
+                 <div>5,900</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$30,000 - 39,999</div>
+            <div>$40,000 - 49,999</div>
+            <div>$50,000 - 59,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>900</div>
+                <div>1,202</div>
+                 <div>1,202</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>2,100</div>
+                <div>2,220</div>
+                 <div>2,220</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>2,930</div>
+                <div>3,050</div>
+                 <div>3,050</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>3,130</div>
+                <div>3,250</div>
+                 <div>3,250</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>3,250</div>
+                <div>3,370</div>
+                 <div>3,570</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>3,250</div>
+                <div>3,570</div>
+                 <div>4,570</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>3,440</div>
+                <div>4570</div>
+                 <div>5570</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>4,440</div>
+                <div>5,570</div>
+                 <div>6,550</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,440</div>
+                <div>6,570</div>
+                 <div>7,550</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,440</div>
+                <div>7,570</div>
+                 <div>8,570</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>7,100</div>
+                <div>8,220</div>
+                 <div>9,200</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>7,100</div>
+                <div>8,220</div>
+                 <div>9,220</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$60,000 - 69,999</div>
+            <div>$70,000 - 79,999</div>
+            <div>$80,000 - 99,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>1,020</div>
+                <div>1,020</div>
+                 <div>1,060</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>2,100</div>
+                <div>2,220</div>
+                 <div>2,220</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>3,050</div>
+                <div>3,240</div>
+                 <div>3,090</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>3,440</div>
+                <div>4,440</div>
+                 <div>6,290</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>4,570</div>
+                <div>5,570</div>
+                 <div>7,420</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,570</div>
+                <div>6,570</div>
+                 <div>8,420</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,570</div>
+                <div>7,570</div>
+                 <div>9,420</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>7,570</div>
+                <div>8,570</div>
+                 <div>10,420</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>8,570</div>
+                <div>9,570</div>
+                 <div>11,420</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>9,570</div>
+                <div>10,570</div>
+                 <div>12,420</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>10,220</div>
+                <div>11,220</div>
+                 <div>13,260</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>10,220</div>
+                <div>11,240</div>
+                 <div>13,460</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$100,000 - 149,999</div>
+            <div>$150,000 - 239,999</div>
+            <div>$240,000 - 259,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>1,870</div>
+                <div>2,040</div>
+                 <div>2,040</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>4,070</div>
+                <div>4,440</div>
+                 <div>4,440</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,900</div>
+                <div>6,470</div>
+                 <div>6,470</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>7,100</div>
+                <div>7,870</div>
+                 <div>7,870</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>8,220</div>
+                <div>9,190</div>
+                 <div>9,190</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>9,320</div>
+                <div>10,390</div>
+                 <div>10,390</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>10,520</div>
+                <div>11,590</div>
+                 <div>11,950</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>11,720</div>
+                <div>12,790</div>
+                 <div>12,790</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>12,920</div>
+                <div>13,990</div>
+                 <div>13,990</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>14,120</div>
+                <div>15,190</div>
+                 <div>15,520</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>14,980</div>
+                <div>16,050</div>
+                 <div>17,170</div>
+            </div>
+            <div class="col-sm-1" style="border-left:1px solid black;text-align:center;">
+                <div>15,180</div>
+                <div>16,250</div>
+                 <div>18,170</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$260,000 - 279,999</div>
+            <div>$280,000 - 299,999</div>
+            <div>$300,000 - 319,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>2,040</div>
+                <div>2,040</div>
+                 <div>2,040</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>4,440</div>
+                <div>4,440</div>
+                 <div>4,440</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,470</div>
+                <div>6,470</div>
+                 <div>6,470</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>7,870</div>
+                <div>7,870</div>
+                 <div>8,200</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>9,190</div>
+                <div>9,190</div>
+                 <div>10,320</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>10,390</div>
+                <div>10,720</div>
+                 <div>12,320</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>11,590</div>
+                <div>12,720</div>
+                 <div>14,320</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>13,310</div>
+                <div>14,720</div>
+                 <div>16,320</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>15,120</div>
+                <div>16,720</div>
+                 <div>18,320</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>17,120</div>
+                <div>18,720</div>
+                 <div>20,320</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>18,770</div>
+                <div>20,370</div>
+                 <div>21,970</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>19,720</div>
+                <div>21,370</div>
+                 <div>22,970</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:2px solid black;border-right:1px solid black;text-align:center;">
+            <div>$320,000 - 364,999</div>
+            <div>$365,000 - 524,999</div>
+            <div>$525,000 and over</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:2px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>2,720</div>
+                <div>2,970</div>
+                 <div>3,140</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,950</div>
+                <div>6,470</div>
+                 <div>68,40</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>8,750</div>
+                <div>9,600</div>
+                 <div>10,170</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>10,950</div>
+                <div>12,100</div>
+                 <div>12,870</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>13,070</div>
+                <div>14,530</div>
+                 <div>15,500</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>15,070</div>
+                <div>16,830</div>
+                 <div>18,000</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>17,070</div>
+                <div>19,130</div>
+                 <div>20,500</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>19,070</div>
+                <div>21,430</div>
+                 <div>23,000</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>21,290</div>
+                <div>23,730</div>
+                 <div>25,500</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>23,590</div>
+                <div>26,030</div>
+                 <div>28,000</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>25,540</div>
+                <div>27,980</div>
+                 <div>30,150</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>26,840</div>
+                <div>29,280</div>
+                 <div>31,650</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------------TABLE-2---------------------------------------------------------->
+<div class="container" style="width: 100%;">
+
+    <div class="row">
+        <div class=" col-sm-12 " style="text-align: center;">
+           <strong> Single or Married Filing Separately </strong>
+        </div>
+    </div>
+
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;border-top:1px solid black">
+         <strong>Higher Paying Job Annual Taxable Wage & Salary</strong>
+        </div>
+
+        <div class="col-sm-10" style="border-top:1px solid black;border-bottom:1px solid black;border-left:1px solid black;text-align: center;">
+            <strong>Lower Paying Job Annual Taxable Wage & Salary</strong>
+        </div>
+
+        <div class="col-sm-10" style="border:1px solid black" style="font-size: 12px;">
+            <div class="row">
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$0 - 9,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$10,000 - 19,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$20,000 - 29,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$30,000 - 39,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$40,000 - 49,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$50,000 - 59,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$60,000 - 69,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$70,000 - 79,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$80,000 - 89,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$90,000 - 99,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$100,000 - 109,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;padding-bottom: 0.7em;">$110,000 - 120,000</div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$0 - 9,999</div>
+            <div>$10,000 - 19,999</div>
+            <div>$20,000 - 29,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>$460</div>
+                <div>940</div>
+                 <div>1,020</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$940</div>
+                <div>1,530</div>
+                 <div>1,610</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,020</div>
+                <div>1,610</div>
+                 <div>2,130</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,020</div>
+                <div>2,020</div>
+                 <div>3,130</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$4,170</div>
+                <div>3,060</div>
+                 <div>4,130</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,870</div>
+                <div>3,460</div>
+                 <div>4,540</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,870</div>
+                <div>3,460</div>
+                 <div>4,540</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,870</div>
+                <div>3,460</div>
+                 <div>4,720</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,870</div>
+                <div>3,640</div>
+                 <div>4,920</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$2,040</div>
+                <div>3,830</div>
+                 <div>5,110</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$2,040</div>
+                <div>3,830</div>
+                 <div>5,110</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>$2,040</div>
+                <div>3,830</div>
+                 <div>5,110</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$30,00 - 39,999</div>
+            <div>$40,000 - 59,999</div>
+            <div>$60,000 - 79,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>1,020</div>
+                <div>1,870</div>
+                 <div>1,870</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>2,060</div>
+                <div>3,460</div>
+                 <div>3,460</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>3,130</div>
+                <div>4,540</div>
+                 <div>4,690</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>4,130</div>
+                <div>5,540</div>
+                 <div>5,890</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,130</div>
+                <div>6,690</div>
+                 <div>7,090</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,540</div>
+                <div>7,290</div>
+                 <div>7,690</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,720</div>
+                <div>7,490</div>
+                 <div>7,890</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,920</div>
+                <div>7,690</div>
+                 <div>8,090</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,120</div>
+                <div>7,890</div>
+                 <div>8,290</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,310</div>
+                <div>8,080</div>
+                 <div>8,480</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,310</div>
+                <div>8,080</div>
+                 <div>9,260</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>6,310</div>
+                <div>8,080</div>
+                 <div>10,060</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$80,000 - 99,999</div>
+            <div>$100,000 - 124,999</div>
+            <div>$125,000 - 149,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>2,020</div>
+                <div>2,040</div>
+                 <div>2,040</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>3,810</div>
+                <div>3,830</div>
+                 <div>3,830</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,090</div>
+                <div>5,110</div>
+                 <div>5,110</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,290</div>
+                <div>6,310</div>
+                 <div>7,030</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>7,490</div>
+                <div>7,510</div>
+                 <div>9,030</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>8,090</div>
+                <div>8,430</div>
+                 <div>10,430</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>8,290</div>
+                <div>9,430</div>
+                 <div>11,430</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>8,490</div>
+                <div>10,430</div>
+                 <div>12,580</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>9,470</div>
+                <div>11,430</div>
+                 <div>13.880</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>10,460</div>
+                <div>12,420</div>
+                 <div>15,170</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>11,260</div>
+                <div>13,520</div>
+                 <div>16,270</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>12,060</div>
+                <div>14,620</div>
+                 <div>17,370</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$150,000 - 174,999</div>
+            <div>$175,000 - 199,999</div>
+            <div>$200,000 - 249,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>2,360</div>
+                <div>2,720</div>
+                 <div>2,970</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>4,950</div>
+                <div>5,310</div>
+                 <div>5,860</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>7,030</div>
+                <div>7,540</div>
+                 <div>8,240</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>9,030</div>
+                <div>9,840</div>
+                 <div>10,540</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>11,030</div>
+                <div>12,140</div>
+                 <div>12,840</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>12,730</div>
+                <div>13,840</div>
+                 <div>14,540</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>14,030</div>
+                <div>15,140</div>
+                 <div>15,840</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>15,330</div>
+                <div>16,440</div>
+                 <div>17,140</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>16,630</div>
+                <div>17,740</div>
+                 <div>18,440</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>17,920</div>
+                <div>19,030</div>
+                 <div>19,730</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>19,020</div>
+                <div>20,130</div>
+                 <div>20,830</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>20,120</div>
+                <div>21,230</div>
+                 <div>21,930</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:2px solid black;border-right:1px solid black;text-align:center;">
+            <div>$250,000 - 399,999</div>
+            <div>$400,000 - 449,999</div>
+            <div>$450,000 and over</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:2px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>2,970</div>
+                <div>2,970</div>
+                 <div>3,140</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,860</div>
+                <div>5,860</div>
+                 <div>6,230</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>8,240</div>
+                <div>8,240</div>
+                 <div>8,810</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>10,540</div>
+                <div>10,540</div>
+                 <div>13,310</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>12,840</div>
+                <div>12,840</div>
+                 <div>13,810</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>14,540</div>
+                <div>14,540</div>
+                 <div>15,710</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>15,840</div>
+                <div>15,840</div>
+                 <div>17,210</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>17,140</div>
+                <div>17,140</div>
+                 <div>18,710</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>18,440</div>
+                <div>18,450</div>
+                 <div>20,210</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>19,730</div>
+                <div>19,940</div>
+                 <div>21,700</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>20,830</div>
+                <div>21,240</div>
+                 <div>23,000</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>21,930</div>
+                <div>22,540</div>
+                 <div>24,300</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------TABLE-3------------------------------------------------------------>
+<div class="container" style="width: 100%;">
+
+    <div class="row">
+        <div class=" col-sm-12 " style="text-align: center;">
+           <strong> Head of Household </strong>
+        </div>
+    </div>
+
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;border-top:1px solid black">
+         <strong>Higher Paying Job Annual Taxable Wage & Salary</strong>
+        </div>
+
+        <div class="col-sm-10" style="border-top:1px solid black;border-bottom:1px solid black;border-left:1px solid black;text-align: center;">
+            <strong>Lower Paying Job Annual Taxable Wage & Salary</strong>
+        </div>
+
+        <div class="col-sm-10" style="border:1px solid black" style="font-size: 12px;">
+            <div class="row">
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$0 - 9,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$10,000 - 19,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$20,000 - 29,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$30,000 - 39,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$40,000 - 49,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$50,000 - 59,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$60,000 - 69,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$70,000 - 79,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$80,000 - 89,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$90,000 - 99,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;border-right:1px solid black;padding-bottom: 0.7em;">$100,000 - 109,999</div>
+                <div class="col-sm-1" style="border-bottom:1px solid black;padding-bottom: 0.7em;">$110,000 - 120,000</div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$0 - 9,999</div>
+            <div>$10,000 - 19,999</div>
+            <div>$20,000 - 29,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>$0</div>
+                <div>830</div>
+                 <div>930</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$830</div>
+                <div>1,920</div>
+                 <div>2,130</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$930</div>
+                <div>2,130</div>
+                 <div>2,350</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,020</div>
+                <div>2,220</div>
+                 <div>2,430</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,020</div>
+                <div>2,220</div>
+                 <div>2,900</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,020</div>
+                <div>2,680</div>
+                 <div>3,900</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,480</div>
+                <div>3,680</div>
+                 <div>4,900</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,870</div>
+                <div>4,070</div>
+                 <div>5,340</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,870</div>
+                <div>4,130</div>
+                 <div>5,540</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$1,930</div>
+                <div>4,330</div>
+                 <div>5,740</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>$2,040</div>
+                <div>4,440</div>
+                 <div>5,850</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>$2,040</div>
+                <div>4,440</div>
+                 <div>5,850</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$30,000 - 39,999</div>
+            <div>$40,000 - 59,999</div>
+            <div>$60,000 - 79,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>1,020</div>
+                <div>1,020</div>
+                 <div>1,870</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>2,220</div>
+                <div>2,530</div>
+                 <div>4,070</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>2,430</div>
+                <div>3,750</div>
+                 <div>5,310</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>2,980</div>
+                <div>4,830</div>
+                 <div>6,600</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>3,980</div>
+                <div>5,860</div>
+                 <div>7,800</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>4,980</div>
+                <div>7,060</div>
+                 <div>9,000</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,040</div>
+                <div>8,260</div>
+                 <div>10,200</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,630</div>
+                <div>8,850</div>
+                 <div>10,780</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,830</div>
+                <div>9,050</div>
+                 <div>10,980</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>7,030</div>
+                <div>9,250</div>
+                 <div>1,1180</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>7,140</div>
+                <div>9,360</div>
+                 <div>11,580</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>7,140</div>
+                <div>9,360</div>
+                 <div>12,380</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$80,000 - 99,999</div>
+            <div>$100,000 - 124,999</div>
+            <div>$125,000 - 149,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>1900</div>
+                <div>2,040</div>
+                 <div>2,040</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>4,300</div>
+                <div>4,440</div>
+                 <div>4,440</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,710</div>
+                <div>5,850</div>
+                 <div>5,850</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>7,000</div>
+                <div>7,140</div>
+                 <div>7,360</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>8,200</div>
+                <div>8,340</div>
+                 <div>9,360</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>9,400</div>
+                <div>9,540</div>
+                 <div>11,360</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>10,600</div>
+                <div>11,360</div>
+                 <div>13,360</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>11,180</div>
+                <div>12,750</div>
+                 <div>14,750</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>11,670</div>
+                <div>13,750</div>
+                 <div>16,010</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>12,670</div>
+                <div>14,750</div>
+                 <div>17,310</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>13,580</div>
+                <div>15,770</div>
+                 <div>18,520</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>14,380</div>
+                <div>18,870</div>
+                 <div>19,620</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:1px solid black;border-right:1px solid black;text-align:center;">
+            <div>$150,000 - 174,999</div>
+            <div>$175,000 - 149,999</div>
+            <div>$200,000 - 249,999</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:1px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>2,040</div>
+                <div>2,720</div>
+                 <div>2,970</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>5,060</div>
+                <div>5,920</div>
+                 <div>6,470</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>7,280</div>
+                <div>8,130</div>
+                 <div>8,990</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>9,360</div>
+                <div>10,480</div>
+                 <div>11,370</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>11,360</div>
+                <div>12,780</div>
+                 <div>13,670</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>13,480</div>
+                <div>15,080</div>
+                 <div>15,970</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>15,780</div>
+                <div>17,380</div>
+                 <div>18,270</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>17,460</div>
+                <div>19,070</div>
+                 <div>19,960</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>18,7600</div>
+                <div>20,370</div>
+                 <div>21,260</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>20,060</div>
+                <div>21,670</div>
+                 <div>22,560</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>21,270</div>
+                <div>22,880</div>
+                 <div>23,770</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>22,370</div>
+                <div>23,980</div>
+                 <div>24,870</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 container" style="width: 100%;">
+    <div claas="row">
+        <div class="col-sm-2" style="border-bottom:2px solid black;border-right:1px solid black;text-align:center;">
+            <div>$250,000 - 349,999</div>
+            <div>$350,000 - 449,999</div>
+            <div>$450,000 and over</div>
+        </div>
+    </div>
+
+    <div class="col-sm-10" style="border-bottom:2px solid black;">
+        <div class="row">
+            <div class="col-sm-1" style="border-right:1px solid black;border-left:1px solid black;text-align:center;">
+                <div>2,970</div>
+                <div>2,970</div>
+                 <div>3,140</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>6,470</div>
+                <div>6,470</div>
+                 <div>6,840</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>8,990</div>
+                <div>8,990</div>
+                 <div>9,560</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>11,370</div>
+                <div>11,370</div>
+                 <div>12,140</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>13,670</div>
+                <div>13,670</div>
+                 <div>14,640</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>15,9700</div>
+                <div>15,970</div>
+                 <div>17,140</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>18,270</div>
+                <div>18,270</div>
+                 <div>19,640</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>19,960</div>
+                <div>19,960</div>
+                 <div>21,530</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>21,360</div>
+                <div>21,360</div>
+                 <div>23,030</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>22,560</div>
+                <div>22,560</div>
+                 <div>24,530</div>
+            </div>
+            <div class="col-sm-1" style="border-right:1px solid black;text-align:center;">
+                <div>23,770</div>
+                <div>23,900</div>
+                 <div>25,940</div>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                <div>24,870</div>
+                <div>25,200</div>
+                 <div>27,240</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<button id="btn_mhr_save"  type="submit" class="btn btn-primary btn-block" 
+     style="width: 20%;margin-top: 1em;margin-bottom: 1em;float: right;margin-right: 35em;"><strong>Save</strong></button>
+
+
+    </form>
+</div>

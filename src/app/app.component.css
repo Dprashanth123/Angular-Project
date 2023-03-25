@@ -1,0 +1,200 @@
+.documents h6 {
+    display: block; margin: 0; font-size: 1.2em; font-weight: bold; text-transform: uppercase;
+}
+.documents th.or-column {
+    background: inherit;
+}
+.documents tbody {
+    border: 1px solid black;
+    vertical-align: top;
+}
+.documents td {
+    text-align: center;
+}
+.document-item {
+    font-size: 0.8em;
+    padding: 0;
+    border-bottom: 2px solid black;
+    text-align: left;
+}
+.document-cell {
+    padding: .1em .5em;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+.document-cell label {
+    display: block;
+}
+label {
+    font-weight: normal;
+}
+.document-cell input {
+    height: auto;
+    padding: .2em .5em;
+    border: none;
+}
+.document-add {
+    margin: .2em;
+    padding: 0 .5em;
+}
+table .or-column {
+    text-transform: uppercase;
+    width: 1.5em;
+    padding: 0 0 .3em 0;
+    vertical-align: bottom;
+    background-color: #c0c0c0;
+}
+h4.large {
+    font-size: 1.15em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: .25em;
+}
+p {
+    margin-bottom: 0.5em;
+}
+b, strong {
+    font-weight: 700;
+}
+.input-control {
+    display: inline;
+    width: auto;
+    padding: 0 .5ex;
+}
+.form-box {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 1ex;
+	width: 100%;
+}
+.form-box > .row > div {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    padding-bottom: 1em;
+}
+.form-box label {
+    white-space: nowrap;
+    font-size: .9em;
+    display: block;
+}
+.header-box {
+    border: 1px solid black;
+    padding: .25em;
+    background-color: #e0e0e0;
+}
+.form-cell {
+    border: 1px solid black;
+    padding: 1ex;
+	width: 100%;
+}
+
+
+
+
+
+hr.heavy {
+    border: solid black;
+    border-width: 1ex 0 1px;
+    height: .5ex;
+    margin: 0;
+    margin-top: 1em;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid black;
+    background: transparent;
+    clear: both;
+}
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: .5em 0 0;
+}
+.documents-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.documents-table th {
+    position: relative;
+    border-bottom: 1px solid black;
+    width: 33.3%;
+    padding: .5em;
+    text-align: center;
+}
+.documents-table h6 {
+    display: block;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+table .or-column {
+    text-transform: uppercase;
+    width: 1.5em;
+    padding: 0 0 .3em 0;
+    vertical-align: bottom;
+    background-color: #c0c0c0;
+}
+.documents-table td {
+    border-right: 1px solid black;
+    vertical-align: top;
+}
+.documents-table td > ol {
+    padding: 0;
+    counter-reset: table-list;
+}
+.documents-table td > ol > li:first-child {
+    border-top-style: none;
+}
+.documents-table td > ol > li {
+    border-top: 1px solid black;
+    padding: .5em .5em .5em 2em;
+    margin: 0;
+    list-style: none;
+}
+.documents-table td > ol > li:before {
+    content: counter(table-list, decimal) '.';
+    counter-increment: table-list;
+    font-weight: bold;
+    margin-right: 1ex;
+    margin-left: -1.5em;
+} 
+
+
+
+
+
+
+
+
+
+.documents-table h6 {
+    display: block; margin: 0; font-size: 1em; font-weight: bold; text-transform: uppercase;
+}
+.documents-table td > ol > li {
+    border-top: 1px solid black; padding: .5em .5em .5em 2em; margin: 0; list-style: none;
+}
+.end-notes {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 1.5em 0;
+}
+
+
+
+
+
+
+
+nav a.active{
+    color:cornflowerblue;
+}
